@@ -1,0 +1,52 @@
+/** ========== FONTS ========== **/
+@font-face {
+  font-family: 'Material Icons';
+  src: url("../../flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"); }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../../fonts/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../../fonts/Roboto-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../../fonts/Roboto-Bold.ttf"); }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale; }
+
+nav {
+  position: relative;
+  background-color: #4e0900; }
+  nav .brand-wrapper {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    background-color: white;
+    opacity: .2; }
+  nav a.brand-logo {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    z-index: 100; }
+  nav ul a {
+    font-family: 'Roboto-Regular';
+    font-size: 1.5em; }
