@@ -39,6 +39,11 @@
 $mainbgcolor: rgb(78,
 9,
 0);
+.nav-bg {
+    background: url('/images/navbg.svg') no-repeat;
+    background-size: 100%;
+}
+
 nav {
     position: relative;
     background-color: $mainbgcolor;

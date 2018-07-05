@@ -1,37 +1,48 @@
-/** ========== IKANIK LOOK AND FEEL ========== **/
-
-
-/** ========== VARIABLES ========== **/
-
-$primary-color-dark:#263238;
-$primary-color-light:#0B2E49;
-$secondary-color:#7D0000;
-$cta-color:#FFDD00;
-$primary-font:'Roboto-Regular';
-$secondary-font:'Source-Sans-Rgular';
-
-/** ========== MIXINS ========== **/
-
-@mixin cta-text() {
-    font-family: 'Roboto-Bold';
-    font-size: 70px;
-    color: $cta-color;
-    text-shadow: 0 3 6 #000;
-}
-
-@mixin heading-text($font-sise) {
-    font-family: 'Roboto-Medium';
-    font-size: $font-size;
-    color: $primary-color-dark;
-    word-wrap: normal;
-}
-
-@mixin paragraph-text($font-size, $color) {
-    font-family: $primary-font;
-    font-size: $font-size;
-    color: $color;
-}
-
-@mixin display-text() {}
-
-@mixin symbol-text() {}
+        /** ========== IKANIK LOOK AND FEEL ========== **/
+        /** ========== VARIABLES ========== **/
+        
+        $primary-color-dark:#263238;
+        $primary-color-light:#0B2E49;
+        $secondary-color:#7D0000;
+        $cta-color:#FFDD00;
+        $btn-color:#009688;
+        $primary-font:'Roboto-Regular';
+        $secondary-font:'Source-Sans-Rgular';
+        $heading-size: (lg: 40, md:30, sm:25);
+        $paragraph-size: (lg:40, md:25, sm:25);
+        $symboltext-size: (lg:25, sm:15);
+        /** ========== MIXINS ========== **/
+        
+        @mixin cta-text() {
+            font-family: 'Roboto-Bold';
+            font-size: 70px;
+            text-shadow: 0 3 6 #000;
+        }
+        /** ========== TEXT CLASSES ========== **/
+        
+        @each $size,
+        $font-size in $heading-size {
+            .h-#{$size} {
+                font-family: 'Roboto-Medium';
+                font-size: #{$font-size}px;
+                word-wrap: normal;
+            }
+        }
+        
+        @each $size,
+        $font-size in $paragraph-size {
+            .p-#{$size} {
+                font-family: $primary-font;
+                font-size: #{$font-size}px;
+                word-wrap: normal;
+            }
+        }
+        
+        @each $size,
+        $font-size in $symboltext-size {
+            .symbol-#{$size} {
+                font-family: 'Roboto-Regular';
+                font-size: #{$font-size}px;
+                word-wrap: normal;
+            }
+        }

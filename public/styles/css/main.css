@@ -29,6 +29,10 @@
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale; }
 
+.nav-bg {
+  background: url("/images/navbg.svg") no-repeat;
+  background-size: 100%; }
+
 nav {
   position: relative;
   background-color: #4e0900; }
