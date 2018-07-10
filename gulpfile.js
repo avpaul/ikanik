@@ -35,7 +35,7 @@ gulp.task('watch-scss', function() {
 var browser = function() {
     var stream = browserSync.init({
         files: ['./'],
-        browser: 'Firefox',
+        browser: 'chrome',
         proxy: 'http://localhost:3000',
         port: '3001'
     });

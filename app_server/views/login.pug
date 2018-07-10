@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="shortcut icon", href="./images/ikanik-red-192.png", type="image/png")
+        link(rel="stylesheet", href="./node_modules/mdbootstrap/css/bootstrap.css")
+        link(rel="stylesheet", href="./node_modules/mdbootstrap/css/mdb.css")
+        link(rel="stylesheet", href="./styles/css/main.css")
+        link(rel="stylesheet", href="./styles/css/utilities/absNav.css")
+        title= title
+    body
+       
+        //- Navigation
+        svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 115" style="enable-background:new 0 0 1920 115;" xml:space="preserve")
+            style(type="text/css") .st0{fill:#0B2E49;}
+            path(class="st0 .z-depth-1" d="M1920,0v115C1920,115,7.8,43.8,0,45V0H1920z")
+        nav.navbar-expand
+                .brand-wrapper
+                    a.brand-logo.waves-effect(href='#')
+                        img(src="./images/ikanik-red-192.svg", alt="Ikanik")
+                .navbar-nav.justify-content-end   
+                    ul.nav
+                        li.nav-item
+                            a.nav-link.active(href="#") HOME   
+                        li.nav-item
+                            a.nav-link(href="#") GUIDES   
+                        li.nav-item
+                            a.nav-link(href="#") FORUM   
+                        li.nav-item
+                            a.nav-link(href="#") RECYCLE   
+                        li
+                            a.nav-link(href="#") SHOP    
+                        li.nav-item
+                            a.nav-link(href="#") INOVCLASS  
+
+        //- Login components
+        .container-fluid.login-container
+            .bg-cont
+                //- img(src="/images/logbg.jpg", alt="")
+            form.login-form
+                .md-form.form-group
+                    i.fas.fa-user.prefix
+                    input.form-control(type="text" id="lgn-username")
+                    label(for="lgn-username") Username
+                .md-form.form-group
+                    i.fas.fa-lock.prefix
+                    input.form-control(type="password" id="lgn-password")
+                    label(for="lgn-password") Password
+                button.btn-cyan.btn.btn-sm Log in
+                a(href="#") Forgot password?
+                a(href="#") Or you don't have an account?
+                
+        //- Footer
+        footer.fixed-bottom
+            svg.footerbg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" style="enable-background:new 0 0 1920 400;" xml:space="preserve")
+                style(type="text/css") .st0{fill:#0B2E49;}
+                path(class="st0" d="M0,400L0,0c0,0,1912.2,104.2,1920,100v300L0,400z")
+            .container-fluid
+                .row
+                    .col-4
+                        p Subscribe to ikanik via email
+                        p We will share with you the latest repair tips
+                        div.flex-column
+                            .form-row
+                                .col
+                                    .md-form.form-group
+                                        i.fas.fa-envelope.prefix
+                                        input.form-control(type="text" id="sub-email")
+                                        label(for="sub-email") Your email
+                                .col
+                                    button.btn.btn-flat.btn-sm
+                                        i.fas.fa-check 
+                    .col-8.fast-links
+                        ul
+                            li
+                                a FIND A STORE
+                            li 
+                                a FIND A RECYCLE POINT
+                            li 
+                                a DONATE TO INNOV CLASS
+                            li 
+                                a FAQ
+                        ul 
+                            li
+                                a CONTACT US
+                            li
+                                a ORDERING & PAYMENT
+                            li
+                                a SHIPPING
+                            li
+                                a RETURNS
+                        ul
+                            li
+                                a ABOUT IKANIK
+                            li
+                                a VOLUNTEER WITH US
+                            li
+                                a PRIVACY POLICY
+                            li
+                                a TERMS & CONDITIONS
+                            li
+                                a PRESS ENQUIRIES
+                .row.justify-content-between
+                    div
+                        i.fas.fa-copyright &nbsp; 
+                        span.text-uppercase ikanik 2018
+                    div
+                        i.fas.fa-envelope &nbsp; 
+                        i.fab.fa-facebook 
+                        i.fab.fa-twitter 
+                        i.fab.fa-instagram
+                        
+
+                 
+                        
+        script(src="/js/vendor/fontawesome.all.js")
+        script(src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js")
+        script(src="./node_modules/mdbootstrap/js/popper.min.js")
+        script(src="./node_modules/mdbootstrap/js/bootstrap.js")
+        script(src="./node_modules/mdbootstrap/js/mdb.js")
+        script(src="./js/main.js")
+        block scripts

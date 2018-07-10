@@ -5,12 +5,8 @@
     "main": "home.html",
     "dependencies": {
         "body-parser": "^1.18.3",
-        "bootstrap": "^4.1.1",
         "express": "^4.16.3",
         "gulp-live-server": "0.0.31",
-        "jquery": "^3.3.1",
-        "materialize": "^1.0.0",
-        "materialize-css": "^1.0.0-rc.1",
         "mdbootstrap": "^4.5.5",
         "mongoose": "^5.1.6",
         "morgan": "^1.9.0",

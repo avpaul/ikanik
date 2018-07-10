@@ -1,15 +1,15 @@
-/** ========== GRID BREAKPOINTS ========== **/
+/* ========== GRID BREAKPOINTS ========== */
 
 // Grid breakpoints
 // Define the minimum dimensions at which your layout will change,
 $grid-breakpoints: ( s: 0, m: 600px, md: 768px, l: 922px, xl: 1200px) !default;
 
-/** ========== SPACER ========== **/
+/* ========== SPACER ========== */
 
 $spacer: .25rem !default;
 $spacers:( 0: 0, 1: ($spacer), 2: ($spacer * 2), 3: ($spacer * 4), 4: ($spacer * 8), 5: ($spacer * 16), 6: ($spacer * 32), 7: ($spacer * 64), 8: ($spacer * 128));
 
-/** ========== BOOTSTRAPP SPACING COPY PASTE ========== **/
+/* ========== BOOTSTRAPP SPACING COPY PASTE ========== */
 
 @mixin media-breakpoint-up($breakpoint) {
     $min: map-get($grid-breakpoints, $breakpoint);

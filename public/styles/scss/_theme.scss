@@ -1,0 +1,36 @@
+  /** ========== IKANIK LOOK AND FEEL ========== **/
+  /** ========== MIXINS ========== **/
+  
+  @mixin cta-text() {
+      font-family: 'Roboto-Bold';
+      font-size: 70px;
+      text-shadow: 0 3 6 #000;
+  }
+  /** ========== TEXT CLASSES ========== **/
+  
+  @each $size,
+  $font-size in $heading-size {
+      .h-#{$size} {
+          font-family: 'Roboto-Medium';
+          font-size: #{$font-size}px;
+          word-wrap: normal;
+      }
+  }
+  
+  @each $size,
+  $font-size in $paragraph-size {
+      .p-#{$size} {
+          font-family: $primary-font;
+          font-size: #{$font-size}px;
+          word-wrap: normal;
+      }
+  }
+  
+  @each $size,
+  $font-size in $symboltext-size {
+      .symbol-#{$size} {
+          font-family: 'Roboto-Regular';
+          font-size: #{$font-size}px;
+          word-wrap: normal;
+      }
+  }

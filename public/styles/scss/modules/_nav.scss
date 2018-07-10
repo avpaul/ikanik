@@ -1,0 +1,32 @@
+nav {
+    position: relative;
+    .brand-wrapper {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+    }
+    .brand-logo {
+        width: 64px;
+        height: 64px;
+    }
+    ul {
+        margin-top: 10px;
+        a {
+            font: {
+                family: 'Roboto-Regular';
+                size: 1.5em;
+            }
+            color: #ffffff;
+            &:hover {
+                color: #ffffff;
+                background-color: rgba($color: #ffffff, $alpha: 0.1);
+            }
+            &.active {
+                background-color: rgba($color: #ffffff, $alpha: 0.1);
+            }
+        }
+    }
+}

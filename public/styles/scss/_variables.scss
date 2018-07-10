@@ -1,0 +1,35 @@
+        /** ========== VARIABLES ========== **/
+        
+        $primary-color-dark:#263238;
+        $primary-color-light:#0B2E49;
+        $secondary-color:#7D0000;
+        $cta-color:#FFDD00;
+        $btn-color:#009688;
+        $primary-font:'Roboto-Regular';
+        $secondary-font:'Source-Sans-Rgular';
+        $heading-size: (lg: 40, md:30, sm:25);
+        $paragraph-size: (lg:40, md:25, sm:25);
+        $symboltext-size: (lg:25, sm:15);
+        //z-index
+        $z-top: 10000;
+        /** ========== FONTS ========== **/
+        
+        @font-face {
+            font-family: 'Material Icons';
+            src: url('../../flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2');
+        }
+        
+        @font-face {
+            font-family: 'Roboto-Regular';
+            src: url('../../fonts/Roboto-Regular.ttf');
+        }
+        
+        @font-face {
+            font-family: 'Roboto-Medium';
+            src: url('../../fonts/Roboto-Medium.ttf')
+        }
+        
+        @font-face {
+            font-family: 'Roboto-Bold';
+            src: url('../../fonts/Roboto-Bold.ttf')
+        }

@@ -1,0 +1,21 @@
+body {
+    background: {
+        image: url('../../../images/logbg.jpg');
+    }
+    blur
+}
+
+.login-container {
+    position: relative;
+    .bg-cont {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .login-form {
+        width: 500px;
+        a {
+            display: block;
+        }
+    }
+}

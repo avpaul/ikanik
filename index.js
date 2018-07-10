@@ -15,7 +15,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/node_modules', function(req, res, next) {
-    res.sendFile(path.join(__dirname, req.originalUrl));
+    var filePath = path.join(__dirname, req.originalUrl);
+    if (!req.originalUrl.includes('bootstrap.css.map') || !req.originalUrl.includes('bootstrap.js.map')) {
+        res.sendFile(filePath);
+    } else {
+        res.sendStatus('404');
+    }
 })
 app.use(express.static(path.join(__dirname, 'public')));
 

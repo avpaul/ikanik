@@ -1,3 +1,4 @@
+/** ========== VARIABLES ========== **/
 /** ========== FONTS ========== **/
 @font-face {
   font-family: 'Material Icons';
@@ -15,11 +16,55 @@
   font-family: 'Roboto-Bold';
   src: url("../../fonts/Roboto-Bold.ttf"); }
 
+/** ========== IKANIK LOOK AND FEEL ========== **/
+/** ========== MIXINS ========== **/
+/** ========== TEXT CLASSES ========== **/
+.h-lg {
+  font-family: 'Roboto-Medium';
+  font-size: 40px;
+  word-wrap: normal; }
+
+.h-md {
+  font-family: 'Roboto-Medium';
+  font-size: 30px;
+  word-wrap: normal; }
+
+.h-sm {
+  font-family: 'Roboto-Medium';
+  font-size: 25px;
+  word-wrap: normal; }
+
+.p-lg {
+  font-family: "Roboto-Regular";
+  font-size: 40px;
+  word-wrap: normal; }
+
+.p-md {
+  font-family: "Roboto-Regular";
+  font-size: 25px;
+  word-wrap: normal; }
+
+.p-sm {
+  font-family: "Roboto-Regular";
+  font-size: 25px;
+  word-wrap: normal; }
+
+.symbol-lg {
+  font-family: 'Roboto-Regular';
+  font-size: 25px;
+  word-wrap: normal; }
+
+.symbol-sm {
+  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  word-wrap: normal; }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
+  line-height: 1;
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
@@ -29,28 +74,49 @@
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale; }
 
-.nav-bg {
-  background: url("/images/navbg.svg") no-repeat;
-  background-size: 100%; }
-
 nav {
-  position: relative;
-  background-color: #4e0900; }
+  position: relative; }
   nav .brand-wrapper {
     width: 64px;
     height: 64px;
     position: absolute;
     top: 10px;
     left: 150px;
-    background-color: white;
-    opacity: .2; }
-  nav a.brand-logo {
+    background-color: rgba(255, 255, 255, 0.2); }
+  nav .brand-logo {
     width: 64px;
-    height: 64px;
+    height: 64px; }
+  nav ul {
+    margin-top: 10px; }
+    nav ul a {
+      font-family: 'Roboto-Regular';
+      font-size: 1.5em;
+      color: #ffffff; }
+      nav ul a:hover {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1); }
+      nav ul a.active {
+        background-color: rgba(255, 255, 255, 0.1); }
+
+footer {
+  position: relative;
+  min-height: 300px; }
+  footer .footerbg {
     position: absolute;
-    top: 10px;
-    left: 150px;
-    z-index: 100; }
-  nav ul a {
-    font-family: 'Roboto-Regular';
-    font-size: 1.5em; }
+    z-index: -1000; }
+  footer ul {
+    display: inline-block; }
+
+body {
+  background-image: url("../../../images/logbg.jpg"); }
+
+.login-container {
+  position: relative; }
+  .login-container .bg-cont {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .login-container .login-form {
+    width: 500px; }
+    .login-container .login-form a {
+      display: block; }
