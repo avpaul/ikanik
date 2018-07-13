@@ -34,3 +34,24 @@
           word-wrap: normal;
       }
   }
+  
+  .text-primary {
+      color: $primary-color !important;
+  }
+  
+  .text-secondary {
+      color: $secondary-color !important;
+  }
+  
+  .bg-primary {
+      background-color: $primary-color !important;
+  }
+  
+  .bg-seconary {
+      background-color: $secondary-color !important;
+  }
+  /** ========== BORDERS ========== **/
+  
+  @mixin border-main {
+      border: 2px $primary-color solid;
+  }

@@ -29,9 +29,11 @@ var scss = function() {
 
 gulp.task('scss', scss);
 
+// Gulp watch tasks
 gulp.task('watch-scss', function() {
     return gulp.watch('./public/styles/scss/**/*.scss', gulp.series('scss'));
 });
+
 var browser = function() {
     var stream = browserSync.init({
         files: ['./'],

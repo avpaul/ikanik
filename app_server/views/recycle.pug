@@ -1,0 +1,15 @@
+include default
+
+block content
+    .container-fluid
+        for each img caption context in contents {
+            .imgblock
+                image.img-fluid(src= img)
+                .imgblock-overlay.text-right
+                    span.imgblock-title= caption
+                    p.imgblock-text= context
+        } 
+      
+        .campaign.d-flex.flex-center
+            p.text-center.campaing-text what can you do now? 
+            

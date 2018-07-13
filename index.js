@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/node_modules', function(req, res, next) {
     var filePath = path.join(__dirname, req.originalUrl);
-    if (!req.originalUrl.includes('bootstrap.css.map') || !req.originalUrl.includes('bootstrap.js.map')) {
+    if (!req.originalUrl.includes('bootstrap.css.map') && !req.originalUrl.includes('bootstrap.js.map')) {
         res.sendFile(filePath);
     } else {
         res.sendStatus('404');

@@ -1,0 +1,20 @@
+extends default
+
+block content
+    .container-fluid
+        .header.white
+            image(src="/images/innov-class-logo-dblue.svg")
+            .d-inline-block
+                p.title.text-capitalize the innovation class
+                p.tagline.text-capitalize.text-primary  empowering the classroom
+        each block in contents 
+            .imgblock
+                image.img-fluid(src= block.img)
+                .imgblock-overlay.text-right
+                    span.imgblock-title= block.title
+                    p.imgblock-text= block.context
+        
+    
+        .campaign.d-flex.flex-center
+            p.text-center.campaing-text= campaign
+            btn.btn.btn-cyan.text-capitalize yes i wan't to be a patron 

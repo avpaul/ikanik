@@ -10,49 +10,43 @@ html.h-100(lang="en")
         link(rel="stylesheet", href="./styles/css/main.css")
         link(rel="stylesheet", href="./styles/css/utilities/absNav.css")
         title= title
-    body.h-100
-       
-        //- Navigation
-        img.body-bg(src="/images/logbg.jpg")
-        //- div.body-bg-cover
+    body      
         svg.nav-bg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 115" style="enable-background:new 0 0 1920 115;" xml:space="preserve")
             style(type="text/css") .st0{fill:#0B2E49;}
             path(class="st0 .z-depth-1" d="M1920,0v115C1920,115,7.8,43.8,0,45V0H1920z")
         nav.navbar-expand
                 .brand-wrapper
                     a.brand-logo.waves-effect(href='/')
-                        img(src="./images/ikanik-red-192.svg", alt="Ikanik")
+                        img(src="/images/ikanik-red-192.svg", alt="Ikanik")
                 .navbar-nav.justify-content-end   
-                    ul.nav
+                    ul.nav.text-uppercase
                         li.nav-item
-                            a.nav-link(href="#") HOME   
+                            a.nav-link.active(href="/") home   
                         li.nav-item
-                            a.nav-link(href="#") GUIDES   
+                            a.nav-link(href="guides") guides   
                         li.nav-item
-                            a.nav-link(href="#") FORUM   
+                            a.nav-link(href="/forum") forum   
                         li.nav-item
-                            a.nav-link(href="#") RECYCLE   
+                            a.nav-link(href="/recycle") recycle   
                         li
-                            a.nav-link(href="#") SHOP    
+                            a.nav-link(href="/shop") shop    
                         li.nav-item
-                            a.nav-link(href="#") INOVCLASS  
+                            a.nav-link(href="/inovclass") inovclass  
+                    div.dropdown
+                        button.btn.dropdown-toggle.text-primary.btn-white
+                            i.fas.fa-user.fa-2x &nbsp;
+                        .dropdown-menu.text-capitalize
+                            a.dropdown-item(href="") my profile
+                            a.dropdown-item(href="") my donations
+                            a.dropdown-item(href="") my shopping cart
+                            .dropdown-divider
+                            a.dropdown-item(href="") log out
 
-        //- Login components
-        .container-fluid.d-flex.justify-content-center
-            form.login-form
-                .md-form.text-input-group
-                    i.fas.fa-user.prefix
-                    input.form-control.text-input(type="text" id="lgn-username" placeholder="Username")
-                .md-form.text-input-group
-                    i.fas.fa-lock.prefix
-                    input.form-control.text-input(type="password" id="lgn-password" placeholder="Password")
-                .form-row.justify-content-end
-                    button.btn-cyan.btn.text-capitalize Sign Up
-                .form-row.flex-column.mt-2
-                    a.nav-link(href="/login") Do you have an account?
+        //- CONTENT GOES HERE
+        block content
                 
         //- Footer
-        footer.fixed-bottom
+        footer
             svg.footerbg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" style="enable-background:new 0 0 1920 400;" xml:space="preserve")
                 style(type="text/css") .st0{fill:#0B2E49;}
                 path(class="st0" d="M0,400L0,0c0,0,1912.2,104.2,1920,100v300L0,400z")
@@ -107,9 +101,6 @@ html.h-100(lang="en")
                         i.fab.fa-twitter.fa-2x.mr-3 
                         i.fab.fa-instagram.fa-2x.mr-3
                         i.fab.fa-facebook.fa-2x 
-                        
-
-                 
                         
         script(src="/js/vendor/fontawesome.all.js")
         script(src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js")

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="en")
+html.h-100(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -10,10 +10,12 @@ html(lang="en")
         link(rel="stylesheet", href="./styles/css/main.css")
         link(rel="stylesheet", href="./styles/css/utilities/absNav.css")
         title= title
-    body
+    body.h-100
        
         //- Navigation
-        svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 115" style="enable-background:new 0 0 1920 115;" xml:space="preserve")
+        img.body-bg(src="/images/logbg.jpg")
+        //- div.body-bg-cover
+        svg.nav-bg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 115" style="enable-background:new 0 0 1920 115;" xml:space="preserve")
             style(type="text/css") .st0{fill:#0B2E49;}
             path(class="st0 .z-depth-1" d="M1920,0v115C1920,115,7.8,43.8,0,45V0H1920z")
         nav.navbar-expand
@@ -36,21 +38,19 @@ html(lang="en")
                             a.nav-link(href="#") INOVCLASS  
 
         //- Login components
-        .container-fluid.login-container
-            .bg-cont
-                //- img(src="/images/logbg.jpg", alt="")
+        .container-fluid.d-flex.justify-content-center
             form.login-form
-                .md-form.form-group
+                .md-form.text-input-group
                     i.fas.fa-user.prefix
-                    input.form-control(type="text" id="lgn-username")
-                    label(for="lgn-username") Username
-                .md-form.form-group
+                    input.form-control.text-input(type="text" id="lgn-username" placeholder="Username")
+                .md-form.text-input-group
                     i.fas.fa-lock.prefix
-                    input.form-control(type="password" id="lgn-password")
-                    label(for="lgn-password") Password
-                button.btn-cyan.btn.btn-sm Log in
-                a(href="#") Forgot password?
-                a(href="#") Or you don't have an account?
+                    input.form-control.text-input(type="password" id="lgn-password" placeholder="Password")
+                .form-row.justify-content-end
+                    button.btn-cyan.btn.text-capitalize Log in
+                .form-row.flex-column.mt-2
+                    a.nav-link(href="/newpassword") Forgot password?
+                    a.nav-link(href="/signup") Or you don't have an account?
                 
         //- Footer
         footer.fixed-bottom
@@ -59,58 +59,55 @@ html(lang="en")
                 path(class="st0" d="M0,400L0,0c0,0,1912.2,104.2,1920,100v300L0,400z")
             .container-fluid
                 .row
-                    .col-4
-                        p Subscribe to ikanik via email
-                        p We will share with you the latest repair tips
-                        div.flex-column
-                            .form-row
-                                .col
-                                    .md-form.form-group
-                                        i.fas.fa-envelope.prefix
-                                        input.form-control(type="text" id="sub-email")
-                                        label(for="sub-email") Your email
-                                .col
-                                    button.btn.btn-flat.btn-sm
-                                        i.fas.fa-check 
-                    .col-8.fast-links
-                        ul
+                    .col-5
+                        .ct-subsrcibe.mb-4
+                            span.text-secondary Subscribe to ikanik via email
+                            span.text-white We will share with you the latest repair tips
+                        div
+                            .md-form.text-input-group.square-group.d-inline-block
+                                i.fas.fa-envelope.prefix
+                                input.form-control(type="text" id="sub-email" placeholder="Your email")
+                            button.btn-flat.btn-square.btn
+                                i.fas.fa-check.fa-2x 
+                    .col-7.fast-links
+                        ul.nav.flex-column
                             li
-                                a FIND A STORE
+                                a.link(href="#") FIND A STORE
                             li 
-                                a FIND A RECYCLE POINT
+                                a.link(href="#") FIND A RECYCLE POINT
                             li 
-                                a DONATE TO INNOV CLASS
+                                a.link(href="#") DONATE TO INNOV CLASS
                             li 
-                                a FAQ
-                        ul 
+                                a.link(href="#") FAQ
+                        ul.nav.flex-column 
                             li
-                                a CONTACT US
+                                a.link(href="#") CONTACT US
                             li
-                                a ORDERING & PAYMENT
+                                a.link(href="#") ORDERING & PAYMENT
                             li
-                                a SHIPPING
+                                a.link(href="#") SHIPPING
                             li
-                                a RETURNS
-                        ul
+                                a.link(href="#") RETURNS
+                        ul.nav.flex-column
                             li
-                                a ABOUT IKANIK
+                                a.link(href="#") ABOUT IKANIK
                             li
-                                a VOLUNTEER WITH US
+                                a.link(href="#") VOLUNTEER WITH US
                             li
-                                a PRIVACY POLICY
+                                a.link(href="#") PRIVACY POLICY
                             li
-                                a TERMS & CONDITIONS
+                                a.link(href="#") TERMS & CONDITIONS
                             li
-                                a PRESS ENQUIRIES
-                .row.justify-content-between
+                                a.link(href="#") PRESS ENQUIRIES
+                .row.justify-content-between.text-white.mt-3.mx-3.mb-1
+                    div.footer-copyright.text-center
+                        i.fas.fa-copyright.fa-2x.mr-2.text-secondary 
+                        span.text-uppercase.owner ikanik 2018
                     div
-                        i.fas.fa-copyright &nbsp; 
-                        span.text-uppercase ikanik 2018
-                    div
-                        i.fas.fa-envelope &nbsp; 
-                        i.fab.fa-facebook 
-                        i.fab.fa-twitter 
-                        i.fab.fa-instagram
+                        i.fas.fa-envelope.fa-2x.mr-3  
+                        i.fab.fa-twitter.fa-2x.mr-3 
+                        i.fab.fa-instagram.fa-2x.mr-3
+                        i.fab.fa-facebook.fa-2x 
                         
 
                  

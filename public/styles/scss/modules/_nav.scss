@@ -1,5 +1,4 @@
 nav {
-    position: relative;
     .brand-wrapper {
         width: 64px;
         height: 64px;
@@ -26,6 +25,19 @@ nav {
             }
             &.active {
                 background-color: rgba($color: #ffffff, $alpha: 0.1);
+            }
+        }
+    }
+    .dropdown {
+        .dropdown-toggle {
+            margin: 0px;
+            border-radius: 0px;
+            padding: unset;
+            height: 2.5rem;
+            width: 4rem;
+            &::after {
+                font-size: 2rem;
+                vertical-align: super;
             }
         }
     }

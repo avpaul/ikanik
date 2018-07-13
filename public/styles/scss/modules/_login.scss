@@ -1,21 +1,67 @@
 body {
-    background: {
-        image: url('../../../images/logbg.jpg');
-    }
-    blur
+    position: relative;
 }
 
-.login-container {
-    position: relative;
-    .bg-cont {
-        position: absolute;
-        top: 0;
-        width: 100%;
+.body-bg,
+.body-bg-cover {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 100%;
+}
+
+.body-bg {
+    filter: blur(15px);
+    height: 100%;
+}
+
+.nav-bg {
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+
+.login-form {
+    width: 400px;
+    margin-top: 80px;
+    .btn {
+        font-family: "Roboto-Medium";
+        font-size: 1.25rem;
+        width: 140px;
+        height: 40px;
+        line-height: 0;
+        color: #ffffff;
     }
-    .login-form {
-        width: 500px;
-        a {
-            display: block;
-        }
+    .nav-link {
+        color: #01579B;
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        transition: color .2s ease-in-out;
     }
+    .nav-link:hover {
+        color: darken($color: #007bff, $amount: 5);
+    }
+}
+
+.text-input-group {
+    background-color: #ffffff;
+    @include border-main;
+    height: 3rem;
+    border-radius: 50px;
+    .prefix {
+        display: block;
+        margin-left: 30px;
+        top: .5rem;
+        color: $primary-color;
+    }
+}
+
+.md-form .prefix~input {
+    margin-left: 4rem;
+    width: calc(100% - 5.5rem);
+    border-color: #ffffff;
+    padding-bottom: 0;
+    padding-left: .25rem;
+    margin-top: .25rem;
+    font-size: 1.25rem
 }
