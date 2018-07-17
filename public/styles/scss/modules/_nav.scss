@@ -1,4 +1,10 @@
+.nav-bg {
+    position: absolute;
+    top: 0;
+}
+
 nav {
+    z-index: 500;
     .brand-wrapper {
         width: 64px;
         height: 64px;

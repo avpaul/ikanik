@@ -1,57 +1,117 @@
-  /** ========== IKANIK LOOK AND FEEL ========== **/
-  /** ========== MIXINS ========== **/
-  
-  @mixin cta-text() {
-      font-family: 'Roboto-Bold';
-      font-size: 70px;
-      text-shadow: 0 3 6 #000;
-  }
-  /** ========== TEXT CLASSES ========== **/
-  
-  @each $size,
-  $font-size in $heading-size {
-      .h-#{$size} {
-          font-family: 'Roboto-Medium';
-          font-size: #{$font-size}px;
-          word-wrap: normal;
+      /** ========== IKANIK LOOK AND FEEL ========== **/
+      /** ========== MIXINS ========== **/
+      
+      @mixin cta-text($color: #FFDD00) {
+          font-family: 'Roboto-Bold';
+          font-size: 4rem;
+          text-shadow: 0 3px 6px #000;
+          color: $color;
+          line-height: normal;
       }
-  }
-  
-  @each $size,
-  $font-size in $paragraph-size {
-      .p-#{$size} {
-          font-family: $primary-font;
-          font-size: #{$font-size}px;
-          word-wrap: normal;
+      /** ========== TEXT CLASSES ========== **/
+      
+      .text-bold {
+          font-weight: bold;
       }
-  }
-  
-  @each $size,
-  $font-size in $symboltext-size {
-      .symbol-#{$size} {
-          font-family: 'Roboto-Regular';
-          font-size: #{$font-size}px;
-          word-wrap: normal;
+      
+      .cta-text {
+          @include cta-text();
       }
-  }
-  
-  .text-primary {
-      color: $primary-color !important;
-  }
-  
-  .text-secondary {
-      color: $secondary-color !important;
-  }
-  
-  .bg-primary {
-      background-color: $primary-color !important;
-  }
-  
-  .bg-seconary {
-      background-color: $secondary-color !important;
-  }
-  /** ========== BORDERS ========== **/
-  
-  @mixin border-main {
-      border: 2px $primary-color solid;
-  }
+      
+      @each $size,
+      $font-size in $heading-size {
+          .h-#{$size} {
+              font-family: 'Roboto-Medium';
+              font-size: #{$font-size}px;
+              word-wrap: normal;
+          }
+      }
+      
+      @each $size,
+      $font-size in $paragraph-size {
+          .p-#{$size} {
+              font-family: $primary-font;
+              font-size: #{$font-size};
+              word-wrap: normal;
+              line-height: normal;
+          }
+      }
+      
+      @each $size,
+      $font-size in $symboltext-size {
+          .symbol-#{$size} {
+              font-family: 'Roboto-Regular';
+              font-size: #{$font-size}px;
+              word-wrap: normal;
+          }
+      }
+      
+      .text-primary {
+          color: $primary-color !important;
+      }
+      
+      .text-secondary {
+          color: $secondary-color !important;
+      }
+      
+      .text-secondary-light {
+          color: $secondary-color-light !important;
+      }
+      
+      .text-cta {
+          color: $cta-color !important;
+      }
+      
+      .bg-primary {
+          background-color: $primary-color !important;
+      }
+      
+      .bg-primary-dark {
+          background-color: $primary-color-dark !important;
+      }
+      
+      .bg-seconary {
+          background-color: $secondary-color !important;
+      }
+      /** ========== BORDERS ========== **/
+      
+      @mixin border-main {
+          border: 2px $primary-color solid;
+      }
+      
+      @mixin border-cyan {
+          border: 2px $color-cyan solid;
+      }
+      
+      .bd-cyan {
+          @include border-cyan();
+      }
+      /** ========== BUTTONS ========== **/
+      
+      .btn-cyan {
+          background-color: $color-cyan !important;
+          color: #ffffff !important;
+      }
+      
+      .btn-outline-cyan {
+          border: 2px solid $color-cyan!important;
+          background-color: transparent !important;
+          color: $color-cyan !important;
+      }
+      
+      .btn.btn-sm {
+          padding-left: 1rem;
+          padding-right: 1rem;
+      }
+      
+      .imgblock {
+          position: relative;
+          .imgblock-img {
+              width: 100%;
+              height: 100%
+          }
+          .imgblock-overlay {
+              position: absolute;
+              background-color: rgba($color: #000000, $alpha: .7);
+          }
+      }

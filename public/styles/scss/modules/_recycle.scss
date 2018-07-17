@@ -1,0 +1,47 @@
+.imgblock-rec {
+    &:nth-of-type(1) {
+        .imgblock-overlay {
+            width: 400px;
+            top: 5%;
+            right: 5%;
+        }
+    }
+    &:nth-of-type(2) {
+        .imgblock-overlay {
+            width: 500px;
+            top: 5%;
+            left: 25%;
+        }
+    }
+    &:nth-of-type(3) {
+        .imgblock-overlay {
+            width: 700px;
+            bottom: 5%;
+            right: 2%;
+        }
+    }
+    &:nth-of-type(4) {
+        .imgblock-overlay {
+            max-width: 1000px;
+            top: 5%;
+            left: 5%;
+        }
+    }
+}
+
+.option {
+    max-width: 450px;
+    img {
+        display: block;
+        width: 250px;
+        height: 250px;
+    }
+    .btn {
+        max-width: 200px;
+        font-size: 1.15rem;
+    }
+    .p-sm {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

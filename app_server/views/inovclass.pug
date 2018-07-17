@@ -1,20 +1,20 @@
 extends default
 
 block content
-    .container-fluid
-        .header.white
-            image(src="/images/innov-class-logo-dblue.svg")
-            .d-inline-block
+    .container-fluid.p-0
+        .header.white.mt-1.d-flex
+            image.ml-5(src="/images/innov-class-logo-dblue.svg")
+            .align-self-end.mb-2.ml-4
                 p.title.text-capitalize the innovation class
                 p.tagline.text-capitalize.text-primary  empowering the classroom
         each block in contents 
-            .imgblock
-                image.img-fluid(src= block.img)
-                .imgblock-overlay.text-right
-                    span.imgblock-title= block.title
-                    p.imgblock-text= block.context
+            .imgblock.imgblock-inov
+                image.imgblock-img.img-fluid(src= block.img)
+                .imgblock-overlay.text-right.px-4
+                    span.imgblock-title.cta-text= block.title
+                    p.imgblock-text.p-md.text-white= block.context
         
     
-        .campaign.d-flex.flex-center
-            p.text-center.campaing-text= campaign
-            btn.btn.btn-cyan.text-capitalize yes i wan't to be a patron 
+        .campaign.d-flex.flex-center.flex-column.mt-4
+            p.text-center.campaing-text.p-md.text-primary= campaign
+            btn.btn.btn-cyan.btn-md.text-capitalize.mt-3 yes i wan't to be a patron 

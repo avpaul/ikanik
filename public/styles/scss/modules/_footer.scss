@@ -62,6 +62,18 @@ footer {
             text-shadow: 0 3px 6px #000000;
         }
     }
+    .btn-social {
+        padding: 0;
+        border: 0px;
+        background: transparent;
+        box-sizing: content-box;
+        color: #ffffff;
+        cursor: pointer;
+        transition: color 0.15s ease-in-out;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
     .fast-links {
         .nav {
             display: inline-flex;

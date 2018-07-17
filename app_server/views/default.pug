@@ -32,15 +32,23 @@ html.h-100(lang="en")
                             a.nav-link(href="/shop") shop    
                         li.nav-item
                             a.nav-link(href="/inovclass") inovclass  
-                    div.dropdown
-                        button.btn.dropdown-toggle.text-primary.btn-white
-                            i.fas.fa-user.fa-2x &nbsp;
-                        .dropdown-menu.text-capitalize
-                            a.dropdown-item(href="") my profile
-                            a.dropdown-item(href="") my donations
-                            a.dropdown-item(href="") my shopping cart
+                    div.dropdown.mt-3.mr-3
+                        button.btn.dropdown-toggle.text-primary.btn-white(id="nav-menu" data-toggle="dropdown")
+                            i.fas.fa-user-circle.fa-2x &nbsp;
+                        .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="nav-menu")
+                            a.dropdown-item(href="") 
+                                i.fas.fa-id-card-alt
+                                |&nbsp; profile
+                            a.dropdown-item(href="") 
+                                i.fas.fa-donate
+                                |&nbsp; donations
+                            a.dropdown-item(href="") 
+                                i.fas.fa-shopping-cart
+                                |&nbsp; shopping cart
                             .dropdown-divider
-                            a.dropdown-item(href="") log out
+                            a.dropdown-item(href="") 
+                                i.fas.fa-user-slash
+                                |&nbsp;log out
 
         //- CONTENT GOES HERE
         block content
@@ -97,10 +105,14 @@ html.h-100(lang="en")
                         i.fas.fa-copyright.fa-2x.mr-2.text-secondary 
                         span.text-uppercase.owner ikanik 2018
                     div
-                        i.fas.fa-envelope.fa-2x.mr-3  
-                        i.fab.fa-twitter.fa-2x.mr-3 
-                        i.fab.fa-instagram.fa-2x.mr-3
-                        i.fab.fa-facebook.fa-2x 
+                        button.btn-social.mr-4
+                            i.fas.fa-envelope.fa-2x  
+                        button.btn-social.mr-4
+                            i.fab.fa-twitter.fa-2x 
+                        button.btn-social.mr-4
+                            i.fab.fa-instagram.fa-2x
+                        button.btn-social.mr-3
+                            i.fab.fa-facebook.fa-2x 
                         
         script(src="/js/vendor/fontawesome.all.js")
         script(src="./node_modules/mdbootstrap/js/jquery-3.3.1.min.js")

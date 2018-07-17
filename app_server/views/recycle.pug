@@ -1,15 +1,51 @@
-include default
-
+extend default
 block content
-    .container-fluid
-        for each img caption context in contents {
-            .imgblock
-                image.img-fluid(src= img)
-                .imgblock-overlay.text-right
-                    span.imgblock-title= caption
-                    p.imgblock-text= context
-        } 
-      
-        .campaign.d-flex.flex-center
-            p.text-center.campaing-text what can you do now? 
-            
+    body.bg-primary
+    .container-fluid.p-0
+        .imgblock.imgblock-rec
+                image.imgblock-img.img-fluid(src= "/images/scrap-metal-trash-1x.jpg")
+                .imgblock-overlay.text-center.px-4
+                    span.imgblock-title.cta-text Why recycle?
+                    p.imgblock-text.p-md.text-white Every year Afica produces 2.5 million tonnes of electronic waste.
+                        i.text-cta.fa.fa-frown-open
+        .imgblock.imgblock-rec
+                image.imgblock-img.img-fluid(src="/images/fire-1x.jpg")
+                .imgblock-overlay.text-center.px-4
+                    p.imgblock-text.p-md.text-white Most of it is burnt in open air. The smoke emitted contain dioxins and other pollutants that can cause cancers, kidney failure and brain damage.
+        .imgblock.imgblock-rec
+                image.imgblock-img.img-fluid(src="/images/water-dumping-1x.jpg")
+                .imgblock-overlay.text-center.px-4
+                    p.imgblock-text.p-md.text-white What is left is thrown away. Spreading harmful materials such as beryllium, cadmium, mercury and lead. This is a significant threat to the environment and our life.
+        .imgblock.imgblock-rec
+                image.imgblock-img.img-fluid(src="/images/ewaste-col-1x.jpg")
+                .imgblock-overlay.text-center.px-4
+                    p.imgblock-text.p-md.text-white A large number of what is labeled as 
+                        span.text-secondary-light "e-waste" 
+                        | is actually not waste but rather whole electronic equipments or parts that are readily marketable for reuse or can be recycled for material's recovery.
+        .bg-primary    
+            h1.h1.responsive.text-white.text-center.pt-3 What you can do now...
+            .d-flex.justify-content-center
+                .option.d-flex.flex-column.align-items-center
+                    img.option-img(src="/images/ewaste drives.svg", alt="")
+                    div.option-context.text-white.text-center.mt-3
+                        h2.h2-responsive E-waste Drives
+                        p.p-sm Help us organize an E-waste drive or participate in one. This is a community-driven event where people can bring there E-waste easily.
+                        .opt-action
+                            button.btn.btn-sm.btn-cyan.text-capitalize drive events schedule
+                            button.btn.btn-sm.btn-cyan.text-capitalize organize a drive
+        
+                .option.d-flex.flex-column.align-items-center
+                    img.option-img(src="/images/ewaste-dropoff.svg", alt="")
+                    div.option-context.text-white.text-center.mt-3
+                        h2.h2-responsive Drop-Offs
+                        p.p-sm Bring your E-watse at a drop-off  near you. Drop-offs are E-waste collection centers. Just find the one close to you.
+                        .opt-action
+                            button.btn.btn-sm.btn-cyan.text-capitalize find a drop off
+        
+                .option.d-flex.flex-column.align-items-center
+                    img.option-img(src="/images/ewaste pickups.svg", alt="")
+                    div.option-context.text-white.text-center.mt-3
+                        h2.h2-responsive Pick-Ups
+                        p.p-sm You can also leave your address to us. We will come to pick the E-waste. We have a monthly pick-up service.
+                        .opt-action
+                            button.btn.btn-sm.btn-cyan.text-capitalize add me to the list      

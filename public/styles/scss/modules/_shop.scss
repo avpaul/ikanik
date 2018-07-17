@@ -1,0 +1,125 @@
+/** ========== SEARCH INPUT ========== **/
+
+.md-form.search {
+    max-width: 700px;
+    .btn.btn-search {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: none;
+    }
+}
+
+.shop-search {
+    width: 100%;
+    border: 2px $color-cyan solid;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    .prefix {
+        color: $primary-color;
+        left: 1rem;
+        top: .5rem;
+        font-size: 2rem;
+    }
+    input[type=search-md] {
+        -webkit-box-shadow: 0 1px 0 0 #ffffff;
+        box-shadow: 0 1px 0 0 #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+    .btn.btn-search {
+        margin: 0px;
+        padding: 0px .75rem;
+        font-size: 2rem;
+        color: $primary-color;
+        background-color: #ffffff;
+        height: 47px;
+    }
+    & .prefix~input {
+        width: calc(100% - 8rem);
+    }
+}
+
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+    border-bottom: 1px solid $primary-color;
+}
+
+
+/** ========== FILTERS ========== **/
+
+.filters {
+    @include border-cyan();
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 2rem 0 0;
+    min-height: 200px
+}
+
+.btn.d-filters {
+    max-height: 56px;
+}
+
+.input-range {
+    max-width: 150px;
+    height: 40px;
+}
+
+
+/** ========== PRODUCT CARD ========== **/
+
+.card.product-card {
+    @include border-main;
+    border-radius: 0px;
+    flex-direction: row;
+    width: 480px;
+    .left {
+        position: relative;
+        background-color: $primary-color;
+        width: 230px;
+        color: #ffffff;
+        .product-title {
+            text-transform: uppercase;
+            padding-top: .5rem;
+            padding-left: .625rem;
+        }
+        .product-price {
+            color: $secondary-color-light;
+        }
+        .card-body {
+            padding: 5px .625rem;
+        }
+        .btn {
+            position: absolute;
+            bottom: 0px;
+            margin: 0px;
+            border-radius: 0px;
+            margin-bottom: -2px;
+            &.add-to-cart {
+                width: calc(50% + 2px);
+                background-color: $secondary-color-light;
+                margin-left: -2px;
+                left: 0px;
+            }
+            &.more-about {
+                width: 50%;
+                background-color: #3E2723;
+                right: 0px;
+            }
+        }
+    }
+    .right {
+        background-color: #ffffff;
+        width: 250px;
+        .product-img {
+            width: 100%;
+        }
+    }
+}
+
+.products {
+    display: grid;
+    grid: "1fr 1fr 1fr";
+    grid-row-gap: 10px;
+}

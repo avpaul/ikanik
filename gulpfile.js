@@ -33,6 +33,9 @@ gulp.task('scss', scss);
 gulp.task('watch-scss', function() {
     return gulp.watch('./public/styles/scss/**/*.scss', gulp.series('scss'));
 });
+gulp.task('watch-js', function() {
+    gulp.watch('./**/*.js', gulp.series('build'));
+});
 
 var browser = function() {
     var stream = browserSync.init({

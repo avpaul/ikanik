@@ -1,0 +1,60 @@
+extend default
+block content
+    .container-fluid
+        .d-flex.justify-content-end.align-items-baseline
+            .md-form.search.w-100.z-depth-1-half
+                    i.fas.fa-search.prefix.fa-2x
+                    input.text-input.form-control.search-text(type="search-md" placeholder="search in the shop")
+                    button.btn.btn-search
+                        i.fa.fa-arrow-right
+            .dropdown
+                button.btn.btn-outline-cyan.dropdown-toggle(id="guide-gategories-toggler" data-toggle="dropdown") categories
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="guide-gategories-toggler")
+                    a.dropdown-item(href="#") 
+                        i.fas.faw.fa-mobile-alt
+                        |&nbsp;phone
+                    a.dropdown-item(href="#") 
+                        i.fas.faw.fa-desktop
+                        |&nbsp;desktop
+                    a.dropdown-item(href="#") 
+                        i.fas.faw.fa-laptop
+                        |&nbsp;laptop
+                    a.dropdown-item(href="#") 
+                        i.fas.faw.fa-globe
+                        |&nbsp;others
+        h3.h3.text-capitalize.text-primary most viewed
+        .guides
+            .card.guide-card
+                img.card-img-top(src="/images/disk.jpg")
+                .card-body 
+                    p.guide-title How to fix a crashing ssd drive with simple tools.
+                    .card-options
+                        a.text-secondary-light(href="#")
+                            i.fas.fa-user.text-primary
+                            |&nbsp; avPaul
+                        a.text-secondary-light(href="#")
+                            i.fas.fa-eye.text-primary
+                            |&nbsp;342
+        .d-flex.justify-content-center.my-1
+                button.btn.btn-cyan.py-1.px-3
+                    i.fas.fa-angle-left.fa-2x.text-primary
+                button.btn.btn-cyan.py-1.px-3
+                    i.fas.fa-angle-right.fa-2x.text-primary
+        h3.h3.text-capitalize.text-primary most recent
+        .guides
+            .card.guide-card
+                img.card-img-top(src="/images/disk.jpg")
+                .card-body 
+                    p.guide-title How to fix a crashing ssd drive with simple tools.
+                    .card-options
+                        a.text-secondary-light(href="#")
+                            i.fas.fa-user.text-primary
+                            |&nbsp; avPaul
+                        a.text-secondary-light(href="#")
+                            i.fas.fa-eye.text-primary
+                            |&nbsp;342
+        .d-flex.justify-content-center.my-1
+                button.btn.btn-cyan.py-1.px-3
+                    i.fas.fa-angle-left.fa-2x.text-primary
+                button.btn.btn-cyan.py-1.px-3
+                    i.fas.fa-angle-right.fa-2x.text-primary

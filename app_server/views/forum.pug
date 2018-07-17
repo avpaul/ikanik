@@ -1,0 +1,43 @@
+extend default
+block content
+    .d-flex.justify-content-around
+        .md-form.search.w-100.z-depth-1-half
+                        i.fas.fa-search.prefix.fa-2x
+                        input.text-input.form-control.search-text(type="search-md" placeholder="search in asked questions")
+                        button.btn.btn-search
+                            i.fa.fa-arrow-right
+        button.btn.btn-outline-cyan
+            i.fas.fa-plus
+            |&nbsp; ask anew question
+    .d-flex
+        h3.text-uppercase.text-primary questions on the forum
+        .filters-forum.d-flex
+            .dropdown
+                btn.btn.dropdown-toggle.text-primary.bg-transparent(id="fr-category-filter" data-toggle="dropdown") category
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="fr-category-filter")
+                    btn.dropdown-item phone
+                    btn.dropdown-item desktop
+                    btn.dropdown-item laptop
+                    btn.dropdown-item others
+            .dropdown
+                btn.btn.dropdown-toggle.text-primary.bg-transparent(id="complexity-filter" data-toggle="dropdown") complexity
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="complexity-filter")
+                    btn.dropdown-item simple
+                    btn.dropdown-item complex
+            .dropdown
+                btn.btn.dropdown-toggle.text-primary(id="time-filter" data-toggle="dropdown") time
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="time-filter")
+                    btn.dropdown-item today
+                    btn.dropdown-item this week
+                    btn.dropdown-item last 2 weeks
+            .dropdown
+                btn.btn.dropdown-toggle.text-primary(id="answers-filter" data-toggle="dropdown") answers
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="answers-filter")
+                    btn.dropdown-item not answered
+                    btn.dropdown-item answered
+    .tab-pane by question
+        .tab-content 
+            div  in the tab
+        .tab-content 
+            div  in the tab
+    

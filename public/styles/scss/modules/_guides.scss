@@ -1,0 +1,22 @@
+.guides {
+    display: grid;
+    grid: "1fr 1fr 1fr 1fr 1fr 1fr";
+    grid-row-gap: 5px;
+}
+
+.card.guide-card {
+    max-width: 200px;
+    .card-body {
+        padding: .5rem .5rem 0 .5rem;
+        .guide-title {
+            font-size: 1.1rem;
+            color: $primary-color-dark;
+            line-height: normal;
+            margin-bottom: .25rem;
+        }
+        .card-options {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

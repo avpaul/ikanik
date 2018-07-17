@@ -1,0 +1,294 @@
+extend default
+block content
+    .container-fluid 
+        .d-flex.justify-content-end.align-items-baseline
+            .md-form.search.shop-search.z-depth-1-half
+                i.fas.fa-search.prefix.fa-2x
+                input.text-input.form-control.search-text(type="search-md" placeholder="search in the shop")
+                button.btn.btn-search
+                    i.fa.fa-arrow-right
+            btn.btn.btn-cyan.mr-0.ml-4.d-filters
+                i.fas.fa-filter.text-secondary-light
+                |&nbsp; filters
+        .filters.z-depth-1.d-none.mb-3
+            div 
+                p Price Range
+                .d-flex.mr-4
+                    .input-group.flex-column.mr-3
+                        label(for="priceRange-start") From
+                        input.bd-cyan.input-range(type="number" id="priceRange-start")
+                    .input-group.flex-column
+                        label(for="priceRange-end") To
+                        input.bd-cyan.input-range(type="number" id="priceRange-end")
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-brand" data-toggle="dropdown") brand
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-brand")
+                    a.dropdown-item apple
+                    a.dropdown-item sony
+                    a.dropdown-item techno
+                    a.dropdown-item samsung
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-category" data-toggle="dropdown") category
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-category")
+                    a.dropdown-item phone
+                    a.dropdown-item desktop
+                    a.dropdown-item laptop
+                    a.dropdown-item others
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-color" data-toggle="dropdown") color
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-color")
+                    a.dropdown-item red
+                    a.dropdown-item green
+                    a.dropdown-item yellow
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-brand" data-toggle="dropdown") brand
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-brand")
+                    a.dropdown-item apple
+                    a.dropdown-item sony
+                    a.dropdown-item techno
+                    a.dropdown-item samsung
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-category" data-toggle="dropdown") category
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-category")
+                    a.dropdown-item phone
+                    a.dropdown-item desktop
+                    a.dropdown-item laptop
+                    a.dropdown-item others
+            .dropdown
+                button.btn.dropdown-toggle.btn-white.bd-cyan(id="filter-color" data-toggle="dropdown") color
+                .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="filter-color")
+                    a.dropdown-item red
+                    a.dropdown-item green
+                    a.dropdown-item yellow
+        h2.h2.text-capitalize.text-primary the essentials
+        .products.mb-3
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+        h2.h2.text-capitalize.text-primary for proffessionals
+        .products.mb-3
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")
+            .card.product-card
+                .left
+                    .product-title lorem ipsum
+                    .card-body
+                        .product-price 34 500frw
+                        .product-rating.text-cta
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star
+                            i.fa.fa-star-half
+                        .product-description Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.Excepteur sint occaecat cupidatat non proident.
+                    .card-actions
+                        btn.btn.btn-sm.add-to-cart
+                            i.fa.fa-plus
+                            | &nbsp; add to cart
+                        btn.btn.btn-sm.more-about more
+                .right
+                    img.product-img(src="/images/reptool-1.jpg", alt="")

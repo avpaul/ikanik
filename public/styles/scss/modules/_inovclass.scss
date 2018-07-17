@@ -1,6 +1,6 @@
 .header {
     img {
-        height: 170px;
+        height: 150px;
         display: inline-block
     }
     .title,
@@ -8,23 +8,51 @@
         font-family: "Roboto-Bold";
         padding: 0;
         margin: 0;
+        line-height: 1;
     }
     .title {
         color: #000000;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 4rem;
     }
     .tagline {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $primary-color;
+        margin-left: .8rem;
     }
 }
 
-.imgblock {
-    position: relative;
-    height: 800px;
-    .imgblock-img {}
-    .imgblock-overlay {
-        position: absolute;
+.imgblock.imgblock-inov {
+    &:nth-of-type(2) {
+        height: 600px;
+        .imgblock-overlay {
+            top: 0;
+            left: 10%;
+            width: 70%
+        }
+    }
+    &:nth-of-type(3) {
+        height: 450px;
+        .imgblock-overlay {
+            bottom: 5%;
+            right: 5%;
+            width: 70%;
+        }
+    }
+    &:nth-of-type(4) {
+        height: 550px;
+        .imgblock-overlay {
+            top: 25%;
+            left: 5%;
+            width: 70%;
+        }
+    }
+}
+
+.campaign {
+    .campaing-text {
+        width: 70%;
+    }
+    .btn {
+        font-size: 1.25rem
     }
 }
