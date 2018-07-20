@@ -35,9 +35,28 @@ block content
                 .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="answers-filter")
                     btn.dropdown-item not answered
                     btn.dropdown-item answered
-    .tab-pane by question
-        .tab-content 
-            div  in the tab
-        .tab-content 
-            div  in the tab
-    
+    ul.nav.nav-tabs.nav-justified.text-primary
+        li.nav-item
+            a.nav-link.active(data-toggle="tab" href="#panel1" role="tab") Profile
+        li.nav-item
+            a.nav-link(data-toggle="tab" href="#panel2" role="tab") Follow
+        li.nav-item
+            a.nav-link(data-toggle="tab" href="#panel3" role="tab") Contact
+
+    .tab-content.card
+        .tab-pane.fade.in.show.active(id="panel1" role="tabpanel")
+            br
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                |porro voluptate odit minima.1
+        .tab-pane(id="panel2" role="tabpanel")
+            br
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                |porro voluptate odit minima.2
+        .tab-pane(id="panel3" role="tabpanel")
+            br
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                |porro voluptate odit minima.3
+        

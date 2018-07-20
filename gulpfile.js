@@ -55,7 +55,11 @@ gulp.task('server', function(cb) {
     cb();
 });
 var restart = function(cb) {
-    express.start.bind(express)();
+    var started = false;
+    if (!started) {
+        express.start.bind(express)();
+        started = !started;
+    }
     cb();
 }
 gulp.task('restart', restart);
