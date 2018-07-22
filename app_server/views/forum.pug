@@ -1,14 +1,14 @@
 extend default
 block content
-    .d-flex.justify-content-around
-        .md-form.search.w-100.z-depth-1-half
-                        i.fas.fa-search.prefix.fa-2x
+    .d-flex.justify-content-end.align-items-center.mr-5.mt-2
+        .md-form.search.forum-search.w-100.z-depth-1-half
+                        i.fas.fa-search.prefix.fa-3x
                         input.text-input.form-control.search-text(type="search-md" placeholder="search in asked questions")
                         button.btn.btn-search
                             i.fa.fa-arrow-right
-        button.btn.btn-outline-cyan
-            i.fas.fa-plus
-            |&nbsp; ask anew question
+        button.btn.btn-lg.btn-new-qst
+            i.fas.fa-plus.fa-2x
+            |&nbsp; ask a new question
     .d-flex
         h3.text-uppercase.text-primary questions on the forum
         .filters-forum.d-flex
@@ -35,28 +35,36 @@ block content
                 .dropdown-menu.dropdown-menu-right.text-capitalize(aria-labelledby="answers-filter")
                     btn.dropdown-item not answered
                     btn.dropdown-item answered
-    ul.nav.nav-tabs.nav-justified.text-primary
-        li.nav-item
-            a.nav-link.active(data-toggle="tab" href="#panel1" role="tab") Profile
-        li.nav-item
-            a.nav-link(data-toggle="tab" href="#panel2" role="tab") Follow
-        li.nav-item
-            a.nav-link(data-toggle="tab" href="#panel3" role="tab") Contact
-
-    .tab-content.card
-        .tab-pane.fade.in.show.active(id="panel1" role="tabpanel")
-            br
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                |porro voluptate odit minima.1
-        .tab-pane(id="panel2" role="tabpanel")
+    ul.tabs.bg-primary
+        li.tab
+            a.active( href="#panel1") By Question
+        li.tab
+            a( href="#panel2") By Device
+    
+    .card-forum.card.mb-4
+        div(id="panel1")
+            .list-group
+                .list-group-item.d-flex.justify-content-between.form-list
+                    div 
+                        .forum-qst My screen in black and nothing seems to work!
+                        a.forum-qst-device(href="#") ZTE ZMax Pro
+                    div
+                        div Asked 24 minutes ago by &nbsp;
+                            a.forum-qst-user.text-capitalize(href="#") kasim
+                        .forum-qst-details
+                            .forum-qst-situation No Answer 
+                            a.forum-qst-comments(href="#") 30 comments
+                
+                
+                
+        div(id="panel2")
             br
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
                 |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
                 |porro voluptate odit minima.2
-        .tab-pane(id="panel3" role="tabpanel")
-            br
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                |reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                |porro voluptate odit minima.3
+
+block scripts
+    script(src="/js/materialize.min.js")
+    script $(document).ready(function() {$('.tabs').tabs();})
+        
         

@@ -14,9 +14,8 @@
     width: 100%;
     border: 2px $color-cyan solid;
     border-radius: 5px;
-    margin-bottom: .5rem;
     .prefix {
-        color: $primary-color;
+        color: $color-cyan;
         left: 1rem;
         top: .5rem;
         font-size: 2rem;
@@ -97,16 +96,16 @@
             border-radius: 0px;
             margin-bottom: -2px;
             &.add-to-cart {
-                width: calc(50% + 2px);
+                width: calc(100% + 2px);
                 background-color: $secondary-color-light;
                 margin-left: -2px;
                 left: 0px;
             }
-            &.more-about {
-                width: 50%;
-                background-color: #3E2723;
-                right: 0px;
-            }
+            // &.more-about {
+            //     width: 50%;
+            //     background-color: #3E2723;
+            //     right: 0px;
+            // }
         }
     }
     .right {

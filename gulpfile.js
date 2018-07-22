@@ -40,7 +40,7 @@ gulp.task('watch-js', function() {
 var browser = function() {
     var stream = browserSync.init({
         files: ['./'],
-        browser: 'chrome',
+        browser: 'google',
         proxy: 'http://localhost:3000',
         port: '3001'
     });
